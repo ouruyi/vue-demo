@@ -20,5 +20,15 @@ npm run build
 npm run lint
 ```
 
+### deploy
+```
+cd dist
+git init
+git add -A
+git commit -m "first deploy"
+git remote add origin git@github.com:ouruyi/vue-demo.git
+git push -f origin master:gh-pages
+```
+
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
